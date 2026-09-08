@@ -1,0 +1,27 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.auto.tfvars
+
+# Ansible secrets — only vault.yml.example (unencrypted, structure-only) is meant to be committed.
+# If you commit the real group_vars/all/vault.yml, it MUST be ansible-vault encrypted first — no exceptions.
+*.retry
+.vault_pass*
+
+# Generic secrets / keys
+*.pem
+*.key
+id_rsa*
+.env
+.env.*
+
+# Lab Assistant (Next.js, once it's actually seeded here)
+node_modules/
+.next/
+.env.local
+
+# OS cruft
+.DS_Store
